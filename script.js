@@ -1,5 +1,3 @@
-console.log('Twitter page loaded:', window.location.href);
-
 // Function to detect the Twitter feed
 function isTwitterFeedLoaded() {
 	const feed = document.querySelector('[aria-label="Timeline: Your Home Timeline"]');
@@ -16,7 +14,6 @@ function observeDOM() {
 		
 		let allCheckmarks = document.querySelectorAll('[data-testid="icon-verified"]');
 
-		console.log("allCheckmarks", allCheckmarks.length);
 		allCheckmarks.forEach((checkmark) => {
 			checkmark.remove();
 		})
